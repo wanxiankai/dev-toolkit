@@ -11,7 +11,7 @@ const DISCORD_URL = process.env.NEXT_PUBLIC_DISCORD_INVITE_URL
 const EMAIL_URL = ''
 
 export const siteConfig: SiteConfig = {
-  name: "SaaS Starter",
+  name: "dev-toolkit",
   url: BASE_URL,
   authors: [
     {
