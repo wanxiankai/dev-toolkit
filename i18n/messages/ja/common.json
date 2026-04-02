@@ -1,8 +1,8 @@
 {
   "Home": {
-    "title": "NEXTY.DEV",
+    "title": "DevToolKit - All-in-One Developer Toolbox",
     "tagLine": "最新の Next.js フルスタック SaaS テンプレート",
-    "description": "Next.js と Supabase を活用した本格的な SaaS 開発キット。コンテンツ配信、AI ツール、サブスクリプションサービスを迅速に構築できます。"
+    "description": "無料のオンライン開発者ツール。広告なし、高速、プライバシー重視。"
   },
   "Login": {
     "title": "おかえりなさい",
@@ -342,5 +342,132 @@
         }
       ]
     }
+  },
+  "DevToolKit": {
+    "hero_title": "DevToolKit",
+    "hero_subtitle": "開発者向けオールインワンツールボックス",
+    "hero_description": "エンコード、整形、生成、変換などをカバーする無料のオンライン開発者ツール。広告なし、高速、プライバシー重視。",
+    "search_placeholder": "ツールを検索... (⌘K)",
+    "recently_used": "最近使ったツール",
+    "all_tools": "すべてのツール",
+    "favorites": "お気に入り",
+    "no_favorites": "まだお気に入りはありません。よく使うツールにスターを付けましょう。",
+    "powered_by_ai": "AI"
+  },
+  "Categories": {
+    "encode-decode": "エンコード / デコード",
+    "formatters": "フォーマッター",
+    "generators": "ジェネレーター",
+    "converters": "コンバーター",
+    "viewers": "ビューア・インスペクター",
+    "ai": "AI ツール"
+  },
+  "Tools": {
+    "base64": {
+      "name": "Base64 エンコード/デコード",
+      "description": "Base64文字列とファイルをエンコード・デコード"
+    },
+    "url-encode": {
+      "name": "URL エンコード/デコード",
+      "description": "URLコンポーネントをエンコード・デコード"
+    },
+    "jwt-decoder": {
+      "name": "JWT デコーダー",
+      "description": "JSON Web Tokenをデコードして確認"
+    },
+    "html-entity": {
+      "name": "HTML エンティティ エンコード/デコード",
+      "description": "HTMLエンティティをエンコード・デコード"
+    },
+    "json-formatter": {
+      "name": "JSON フォーマッター & 検証",
+      "description": "JSONデータの整形・圧縮・検証"
+    },
+    "sql-formatter": {
+      "name": "SQL フォーマッター",
+      "description": "SQLクエリを整形して見やすく表示"
+    },
+    "markdown-preview": {
+      "name": "Markdown プレビュー",
+      "description": "ライブプレビュー付きMarkdownエディタ"
+    },
+    "code-formatter": {
+      "name": "コードフォーマッター",
+      "description": "複数言語のコードを整形"
+    },
+    "uuid-generator": {
+      "name": "UUID 生成",
+      "description": "UUID v4とv7識別子を生成"
+    },
+    "hash-generator": {
+      "name": "ハッシュ生成",
+      "description": "MD5、SHA-1、SHA-256、SHA-512を生成"
+    },
+    "password-generator": {
+      "name": "パスワード生成",
+      "description": "安全なランダムパスワードを生成"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum 生成",
+      "description": "ダミーテキストを生成"
+    },
+    "timestamp-converter": {
+      "name": "タイムスタンプ変換",
+      "description": "Unixタイムスタンプと日時を相互変換"
+    },
+    "color-converter": {
+      "name": "カラー変換",
+      "description": "HEX・RGB・HSL間で色形式を変換"
+    },
+    "number-base": {
+      "name": "基数変換",
+      "description": "2進数・8進数・10進数・16進数を変換"
+    },
+    "unit-converter": {
+      "name": "CSS 単位変換",
+      "description": "px・rem・em・vw単位を変換"
+    },
+    "regex-tester": {
+      "name": "正規表現テスター",
+      "description": "正規表現をリアルタイムでテスト"
+    },
+    "diff-viewer": {
+      "name": "Diff ビューア",
+      "description": "テキストとコードを並べて比較"
+    },
+    "http-status": {
+      "name": "HTTP ステータスコード",
+      "description": "HTTPステータスコードの一覧リファレンス"
+    },
+    "cron-parser": {
+      "name": "Cron 式パーサー",
+      "description": "Cron式を解析して説明"
+    },
+    "ai-code-explain": {
+      "name": "AI コード解説",
+      "description": "AIがコードのロジックを解説"
+    },
+    "ai-code-convert": {
+      "name": "AI コード変換",
+      "description": "プログラミング言語間でコードを変換"
+    },
+    "ai-regex-gen": {
+      "name": "AI 正規表現生成",
+      "description": "自然言語から正規表現を生成"
+    }
+  },
+  "ToolActions": {
+    "copy": "コピー",
+    "copied": "コピー済み！",
+    "clear": "クリア",
+    "sample": "サンプル読込",
+    "format": "整形",
+    "minify": "圧縮",
+    "encode": "エンコード",
+    "decode": "デコード",
+    "generate": "生成",
+    "convert": "変換",
+    "input": "入力",
+    "output": "出力"
   }
 }

@@ -2,24 +2,24 @@ import { SiteConfig } from "@/types/siteConfig";
 
 export const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 
-const GITHUB_URL = ''
-const TWITTER_URL = ''
-const YOUTUBE_URL = ''
-const INSTAGRAM_URL = ''
-const TIKTOK_URL = ''
-const DISCORD_URL = process.env.NEXT_PUBLIC_DISCORD_INVITE_URL
-const EMAIL_URL = ''
+const GITHUB_URL = "https://github.com/wanxiankai/dev-toolkit";
+const TWITTER_URL = "";
+const YOUTUBE_URL = "";
+const INSTAGRAM_URL = "";
+const TIKTOK_URL = "";
+const DISCORD_URL = "";
+const EMAIL_URL = "";
 
 export const siteConfig: SiteConfig = {
-  name: "dev-toolkit",
+  name: "DevToolKit",
   url: BASE_URL,
   authors: [
     {
-      name: "your-name",
-      url: BASE_URL,
-    }
+      name: "wanxiankai",
+      url: "https://github.com/wanxiankai",
+    },
   ],
-  creator: '@your-handle',
+  creator: "@wanxiankai",
   socialLinks: {
     github: GITHUB_URL,
     twitter: TWITTER_URL,
@@ -28,16 +28,15 @@ export const siteConfig: SiteConfig = {
     tiktok: TIKTOK_URL,
     discord: DISCORD_URL,
     email: EMAIL_URL,
-    // add more social links here
   },
   themeColors: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
-  defaultNextTheme: 'light', // next-theme option: system | dark | light
+  defaultNextTheme: "light",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/logo.png",
-    apple: "/logo.png", // apple-touch-icon.png
+    apple: "/logo.png",
   },
-}
+};

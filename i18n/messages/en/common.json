@@ -1,8 +1,8 @@
 {
   "Home": {
-    "title": "NEXTY.DEV",
+    "title": "DevToolKit - All-in-One Developer Toolbox",
     "tagLine": "A Modern Next.js Full-Stack SaaS Template",
-    "description": "A production-ready Next.js and Supabase starter template for building modern SaaS applications. Launch your content, AI, or subscription service faster."
+    "description": "Free online developer tools. No ads, fast, and privacy-first."
   },
   "Login": {
     "title": "Welcome back",
@@ -341,5 +341,132 @@
         }
       ]
     }
+  },
+  "DevToolKit": {
+    "hero_title": "DevToolKit",
+    "hero_subtitle": "All-in-One Developer Toolbox",
+    "hero_description": "Free online developer tools for encoding, formatting, generating, converting, and more. No ads, fast, and privacy-first.",
+    "search_placeholder": "Search tools... (⌘K)",
+    "recently_used": "Recently Used",
+    "all_tools": "All Tools",
+    "favorites": "Favorites",
+    "no_favorites": "No favorites yet. Star your frequently used tools!",
+    "powered_by_ai": "AI"
+  },
+  "Categories": {
+    "encode-decode": "Encode / Decode",
+    "formatters": "Formatters",
+    "generators": "Generators",
+    "converters": "Converters",
+    "viewers": "Viewers & Inspectors",
+    "ai": "AI Powered"
+  },
+  "Tools": {
+    "base64": {
+      "name": "Base64 Encode/Decode",
+      "description": "Encode and decode Base64 strings and files"
+    },
+    "url-encode": {
+      "name": "URL Encode/Decode",
+      "description": "Encode and decode URL components"
+    },
+    "jwt-decoder": {
+      "name": "JWT Decoder",
+      "description": "Decode and inspect JSON Web Tokens"
+    },
+    "html-entity": {
+      "name": "HTML Entity Encode/Decode",
+      "description": "Encode and decode HTML entities"
+    },
+    "json-formatter": {
+      "name": "JSON Formatter & Validator",
+      "description": "Format, minify, and validate JSON data"
+    },
+    "sql-formatter": {
+      "name": "SQL Formatter",
+      "description": "Format and beautify SQL queries"
+    },
+    "markdown-preview": {
+      "name": "Markdown Preview",
+      "description": "Live Markdown editor with preview"
+    },
+    "code-formatter": {
+      "name": "Code Formatter",
+      "description": "Format code in multiple languages"
+    },
+    "uuid-generator": {
+      "name": "UUID Generator",
+      "description": "Generate UUID v4 and v7 identifiers"
+    },
+    "hash-generator": {
+      "name": "Hash Generator",
+      "description": "Generate MD5, SHA-1, SHA-256, SHA-512 hashes"
+    },
+    "password-generator": {
+      "name": "Password Generator",
+      "description": "Generate secure random passwords"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum Generator",
+      "description": "Generate placeholder text"
+    },
+    "timestamp-converter": {
+      "name": "Timestamp Converter",
+      "description": "Convert between Unix timestamps and dates"
+    },
+    "color-converter": {
+      "name": "Color Converter",
+      "description": "Convert between HEX, RGB, HSL color formats"
+    },
+    "number-base": {
+      "name": "Number Base Converter",
+      "description": "Convert between binary, octal, decimal, hex"
+    },
+    "unit-converter": {
+      "name": "CSS Unit Converter",
+      "description": "Convert between px, rem, em, vw units"
+    },
+    "regex-tester": {
+      "name": "Regex Tester",
+      "description": "Test regular expressions with real-time matching"
+    },
+    "diff-viewer": {
+      "name": "Diff Viewer",
+      "description": "Compare text and code side by side"
+    },
+    "http-status": {
+      "name": "HTTP Status Codes",
+      "description": "Reference for all HTTP status codes"
+    },
+    "cron-parser": {
+      "name": "Cron Expression Parser",
+      "description": "Parse and explain cron expressions"
+    },
+    "ai-code-explain": {
+      "name": "AI Code Explainer",
+      "description": "AI explains your code logic"
+    },
+    "ai-code-convert": {
+      "name": "AI Code Converter",
+      "description": "Convert code between programming languages"
+    },
+    "ai-regex-gen": {
+      "name": "AI Regex Generator",
+      "description": "Generate regex from natural language"
+    }
+  },
+  "ToolActions": {
+    "copy": "Copy",
+    "copied": "Copied!",
+    "clear": "Clear",
+    "sample": "Load Sample",
+    "format": "Format",
+    "minify": "Minify",
+    "encode": "Encode",
+    "decode": "Decode",
+    "generate": "Generate",
+    "convert": "Convert",
+    "input": "Input",
+    "output": "Output"
   }
 }

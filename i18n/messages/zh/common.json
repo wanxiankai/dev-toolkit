@@ -1,8 +1,8 @@
 {
   "Home": {
-    "title": "NEXTY.DEV",
+    "title": "DevToolKit - All-in-One Developer Toolbox",
     "tagLine": "多场景 Next.js 全栈 SaaS 开发模板",
-    "description": "Nexty 是一个功能齐全的 Next.js SaaS 全栈模板，让你能够快速构建各种商业网站，无论是内容站、工具站还是集成 AI 能力的付费网站。"
+    "description": "免费的在线开发者工具。无广告、速度快、注重隐私。"
   },
   "Login": {
     "title": "欢迎回来",
@@ -341,5 +341,132 @@
         }
       ]
     }
+  },
+  "DevToolKit": {
+    "hero_title": "DevToolKit",
+    "hero_subtitle": "开发者一站式工具箱",
+    "hero_description": "免费在线开发者工具，覆盖编码、格式化、生成、转换等场景。无广告、速度快、注重隐私。",
+    "search_placeholder": "搜索工具... (⌘K)",
+    "recently_used": "最近使用",
+    "all_tools": "全部工具",
+    "favorites": "收藏",
+    "no_favorites": "暂无收藏。把常用工具设为星标吧！",
+    "powered_by_ai": "AI"
+  },
+  "Categories": {
+    "encode-decode": "编码 / 解码",
+    "formatters": "格式化",
+    "generators": "生成器",
+    "converters": "转换器",
+    "viewers": "查看与检测",
+    "ai": "AI 工具"
+  },
+  "Tools": {
+    "base64": {
+      "name": "Base64 编码/解码",
+      "description": "对 Base64 字符串与文件进行编码和解码"
+    },
+    "url-encode": {
+      "name": "URL 编码/解码",
+      "description": "对 URL 组件进行编码和解码"
+    },
+    "jwt-decoder": {
+      "name": "JWT 解码器",
+      "description": "解码并查看 JSON Web Token"
+    },
+    "html-entity": {
+      "name": "HTML 实体 编码/解码",
+      "description": "对 HTML 实体进行编码和解码"
+    },
+    "json-formatter": {
+      "name": "JSON 格式化与校验",
+      "description": "格式化、压缩并校验 JSON 数据"
+    },
+    "sql-formatter": {
+      "name": "SQL 格式化",
+      "description": "格式化并美化 SQL 查询"
+    },
+    "markdown-preview": {
+      "name": "Markdown 预览",
+      "description": "支持实时预览的 Markdown 编辑器"
+    },
+    "code-formatter": {
+      "name": "代码格式化",
+      "description": "格式化多种编程语言代码"
+    },
+    "uuid-generator": {
+      "name": "UUID 生成器",
+      "description": "生成 UUID v4 和 v7 标识符"
+    },
+    "hash-generator": {
+      "name": "Hash 生成器",
+      "description": "生成 MD5、SHA-1、SHA-256、SHA-512 哈希"
+    },
+    "password-generator": {
+      "name": "密码生成器",
+      "description": "生成安全随机密码"
+    },
+    "lorem-ipsum": {
+      "name": "Lorem Ipsum 生成器",
+      "description": "生成占位文本"
+    },
+    "timestamp-converter": {
+      "name": "时间戳转换",
+      "description": "在 Unix 时间戳与日期之间转换"
+    },
+    "color-converter": {
+      "name": "颜色转换",
+      "description": "在 HEX、RGB、HSL 颜色格式之间转换"
+    },
+    "number-base": {
+      "name": "进制转换",
+      "description": "在二进制、八进制、十进制、十六进制之间转换"
+    },
+    "unit-converter": {
+      "name": "CSS 单位转换",
+      "description": "在 px、rem、em、vw 单位之间转换"
+    },
+    "regex-tester": {
+      "name": "正则测试",
+      "description": "实时测试正则表达式匹配"
+    },
+    "diff-viewer": {
+      "name": "差异比较",
+      "description": "并排比较文本和代码差异"
+    },
+    "http-status": {
+      "name": "HTTP 状态码",
+      "description": "查看完整 HTTP 状态码参考"
+    },
+    "cron-parser": {
+      "name": "Cron 表达式解析",
+      "description": "解析并解释 Cron 表达式"
+    },
+    "ai-code-explain": {
+      "name": "AI 代码解释",
+      "description": "由 AI 解释代码逻辑"
+    },
+    "ai-code-convert": {
+      "name": "AI 代码转换",
+      "description": "在不同编程语言之间转换代码"
+    },
+    "ai-regex-gen": {
+      "name": "AI 正则生成",
+      "description": "根据自然语言生成正则表达式"
+    }
+  },
+  "ToolActions": {
+    "copy": "复制",
+    "copied": "已复制！",
+    "clear": "清空",
+    "sample": "加载示例",
+    "format": "格式化",
+    "minify": "压缩",
+    "encode": "编码",
+    "decode": "解码",
+    "generate": "生成",
+    "convert": "转换",
+    "input": "输入",
+    "output": "输出"
   }
 }

@@ -1,0 +1,65 @@
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Link } from "@/i18n/routing";
+import { Tool } from "@/types/tools";
+import { Star } from "lucide-react";
+
+interface ToolLayoutProps {
+  tool: Tool;
+  children: React.ReactNode;
+}
+
+function normalizeCategory(category: string) {
+  return category
+    .split("-")
+    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
+    .join(" ");
+}
+
+export function ToolLayout({ tool, children }: ToolLayoutProps) {
+  return (
+    <div className="w-full space-y-4">
+      <Breadcrumb>
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink asChild>
+              <Link href="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{normalizeCategory(tool.category)}</BreadcrumbPage>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>{tool.name}</BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <div className="flex items-start justify-between gap-4">
+        <div className="space-y-1">
+          <h1 className="text-2xl font-bold tracking-tight">{tool.name}</h1>
+          <p className="text-muted-foreground">{tool.description}</p>
+        </div>
+
+        <Button variant="outline" size="sm" type="button" disabled>
+          <Star className="size-4" />
+          Favorite
+        </Button>
+      </div>
+
+      <Card>
+        <CardContent className="p-4 md:p-6">{children}</CardContent>
+      </Card>
+    </div>
+  );
+}

@@ -1,3 +1,4 @@
+import CommandPalette from "@/components/search/command-palette";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import HeaderLinks from "@/components/header/HeaderLinks";
@@ -7,7 +8,7 @@ import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export default async function SidebarInsetHeader() {
   return (
-    <header className="w-full py-2 px-4 backdrop-blur-md sticky top-0 z-50">
+    <header className="w-full py-2 px-4 backdrop-blur-md sticky top-0 z-50 border-b bg-background/80">
       <nav className="flex justify-between items-center w-full mx-auto">
         <div className="flex items-center gap-2">
           <SidebarTrigger />
@@ -16,14 +17,14 @@ export default async function SidebarInsetHeader() {
         </div>
 
         <div className="flex items-center gap-x-2 flex-1 justify-end">
-          {/* PC */}
           <div className="hidden lg:flex items-center gap-x-2">
+            <CommandPalette />
             <LocaleSwitcher />
             <ThemeToggle />
           </div>
 
-          {/* Mobile */}
-          <div className="flex lg:hidden">
+          <div className="flex lg:hidden items-center gap-x-2">
+            <CommandPalette iconOnly />
             <MobileMenu />
           </div>
         </div>
