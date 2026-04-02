@@ -14,7 +14,7 @@ import {
 import { Kbd } from "@/components/ui/kbd";
 import { TOOLS, searchTools } from "@/config/tools";
 import { useRecentTools } from "@/hooks/use-recent-tools";
-import { useRouter } from "@/i18n/routing";
+import { usePathname, useRouter } from "@/i18n/routing";
 import { Tool, ToolCategory } from "@/types/tools";
 import { Search } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -30,6 +30,7 @@ export default function CommandPalette({ iconOnly = false }: CommandPaletteProps
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const router = useRouter();
+  const pathname = usePathname();
   const { recentTools, addRecentTool } = useRecentTools();
 
   useEffect(() => {
@@ -84,6 +85,10 @@ export default function CommandPalette({ iconOnly = false }: CommandPaletteProps
     setOpen(false);
     router.push(tool.path);
   };
+
+  useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
 
   const getToolName = (tool: Tool) => tTools(`${tool.slug}.name`);
 
