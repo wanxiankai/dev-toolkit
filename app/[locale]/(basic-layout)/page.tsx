@@ -5,7 +5,7 @@ import { ToolGrid } from "@/components/tools/tool-grid";
 import { Button } from "@/components/ui/button";
 import { CATEGORIES, TOOLS, getToolsByCategory } from "@/config/tools";
 import { useRecentTools } from "@/hooks/use-recent-tools";
-import { Link } from "@/i18n/routing";
+import { useRouter } from "@/i18n/routing";
 import { ToolCategory } from "@/types/tools";
 import { Search } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -14,6 +14,7 @@ export default function Home() {
   const t = useTranslations("DevToolKit");
   const tCategories = useTranslations("Categories");
   const tTools = useTranslations("Tools");
+  const router = useRouter();
   const { recentTools } = useRecentTools();
 
   const recent = recentTools
@@ -46,17 +47,19 @@ export default function Home() {
             <h2 className="text-2xl font-semibold tracking-tight">{t("recently_used")}</h2>
             <div className="flex gap-4 overflow-x-auto pb-2">
               {recent.map((tool) => (
-                <Link
+                <button
                   key={tool.slug}
-                  href={tool.path}
-                  className="min-w-[260px] rounded-xl border p-4 hover:bg-accent/20 transition-colors"
+                  type="button"
+                  onClick={() => router.push(tool.path)}
+                  className="min-w-[260px] rounded-xl border p-4 hover:bg-accent/20 transition-colors text-left"
+                  aria-label={tTools(`${tool.slug}.name`)}
                 >
                   <div className="flex items-center gap-2 mb-2">
                     <DynamicIcon name={tool.icon} className="size-4" />
                     <span className="font-medium">{tTools(`${tool.slug}.name`)}</span>
                   </div>
                   <p className="text-sm text-muted-foreground">{tTools(`${tool.slug}.description`)}</p>
-                </Link>
+                </button>
               ))}
             </div>
           </section>

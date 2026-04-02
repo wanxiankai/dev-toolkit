@@ -454,6 +454,46 @@
     "ai-regex-gen": {
       "name": "AI 正規表現生成",
       "description": "自然言語から正規表現を生成"
+    },
+    "url": {
+      "name": "URL エンコード/デコード",
+      "description": "URLコンポーネントをエンコード・デコード"
+    },
+    "jwt": {
+      "name": "JWT デコーダー",
+      "description": "JSON Web Tokenをデコードして確認"
+    },
+    "json": {
+      "name": "JSON フォーマッター & 検証",
+      "description": "JSONデータの整形・圧縮・検証"
+    },
+    "markdown": {
+      "name": "Markdown プレビュー",
+      "description": "ライブプレビュー付きMarkdownエディタ"
+    },
+    "uuid": {
+      "name": "UUID 生成",
+      "description": "UUID v4とv7識別子を生成"
+    },
+    "hash": {
+      "name": "ハッシュ生成",
+      "description": "MD5、SHA-1、SHA-256、SHA-512を生成"
+    },
+    "timestamp": {
+      "name": "タイムスタンプ変換",
+      "description": "Unixタイムスタンプと日時を相互変換"
+    },
+    "color": {
+      "name": "カラー変換",
+      "description": "HEX・RGB・HSL間で色形式を変換"
+    },
+    "regex": {
+      "name": "正規表現テスター",
+      "description": "正規表現をリアルタイムでテスト"
+    },
+    "diff": {
+      "name": "Diff ビューア",
+      "description": "テキストとコードを並べて比較"
     }
   },
   "ToolActions": {

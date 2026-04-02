@@ -453,6 +453,46 @@
     "ai-regex-gen": {
       "name": "AI 正则生成",
       "description": "根据自然语言生成正则表达式"
+    },
+    "url": {
+      "name": "URL 编码/解码",
+      "description": "对 URL 组件进行编码和解码"
+    },
+    "jwt": {
+      "name": "JWT 解码器",
+      "description": "解码并查看 JSON Web Token"
+    },
+    "json": {
+      "name": "JSON 格式化与校验",
+      "description": "格式化、压缩并校验 JSON 数据"
+    },
+    "markdown": {
+      "name": "Markdown 预览",
+      "description": "支持实时预览的 Markdown 编辑器"
+    },
+    "uuid": {
+      "name": "UUID 生成器",
+      "description": "生成 UUID v4 和 v7 标识符"
+    },
+    "hash": {
+      "name": "Hash 生成器",
+      "description": "生成 MD5、SHA-1、SHA-256、SHA-512 哈希"
+    },
+    "timestamp": {
+      "name": "时间戳转换",
+      "description": "在 Unix 时间戳与日期之间转换"
+    },
+    "color": {
+      "name": "颜色转换",
+      "description": "在 HEX、RGB、HSL 颜色格式之间转换"
+    },
+    "regex": {
+      "name": "正则测试",
+      "description": "实时测试正则表达式匹配"
+    },
+    "diff": {
+      "name": "差异比较",
+      "description": "并排比较文本和代码差异"
     }
   },
   "ToolActions": {

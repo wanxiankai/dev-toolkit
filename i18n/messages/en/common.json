@@ -453,6 +453,46 @@
     "ai-regex-gen": {
       "name": "AI Regex Generator",
       "description": "Generate regex from natural language"
+    },
+    "url": {
+      "name": "URL Encode/Decode",
+      "description": "Encode and decode URL components"
+    },
+    "jwt": {
+      "name": "JWT Decoder",
+      "description": "Decode and inspect JSON Web Tokens"
+    },
+    "json": {
+      "name": "JSON Formatter & Validator",
+      "description": "Format, minify, and validate JSON data"
+    },
+    "markdown": {
+      "name": "Markdown Preview",
+      "description": "Live Markdown editor with preview"
+    },
+    "uuid": {
+      "name": "UUID Generator",
+      "description": "Generate UUID v4 and v7 identifiers"
+    },
+    "hash": {
+      "name": "Hash Generator",
+      "description": "Generate MD5, SHA-1, SHA-256, SHA-512 hashes"
+    },
+    "timestamp": {
+      "name": "Timestamp Converter",
+      "description": "Convert between Unix timestamps and dates"
+    },
+    "color": {
+      "name": "Color Converter",
+      "description": "Convert between HEX, RGB, HSL color formats"
+    },
+    "regex": {
+      "name": "Regex Tester",
+      "description": "Test regular expressions with real-time matching"
+    },
+    "diff": {
+      "name": "Diff Viewer",
+      "description": "Compare text and code side by side"
     }
   },
   "ToolActions": {
