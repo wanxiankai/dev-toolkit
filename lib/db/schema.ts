@@ -458,3 +458,25 @@ export const postTags = pgTable(
     }
   }
 )
+
+// ========================================
+// DevToolKit: Favorites
+// ========================================
+export const favorite = pgTable(
+  "favorite",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: uuid("user_id")
+      .notNull()
+      .references(() => user.id, { onDelete: "cascade" }),
+    toolSlug: text("tool_slug").notNull(),
+    category: text("category").notNull(),
+    createdAt: timestamp("created_at", { withTimezone: true })
+      .defaultNow()
+      .notNull(),
+  },
+  (table) => ({
+    userToolUnique: unique("favorite_user_tool_unique").on(table.userId, table.toolSlug),
+    userIdx: index("idx_favorite_user_id").on(table.userId),
+  })
+);

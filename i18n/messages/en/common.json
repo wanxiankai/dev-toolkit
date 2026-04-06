@@ -493,6 +493,18 @@
     "diff": {
       "name": "Diff Viewer",
       "description": "Compare text and code side by side"
+    },
+    "sql": {
+      "name": "SQL Formatter",
+      "description": "Format and beautify SQL queries"
+    },
+    "password": {
+      "name": "Password Generator",
+      "description": "Generate secure random passwords"
+    },
+    "cron": {
+      "name": "Cron Expression Parser",
+      "description": "Parse and explain cron expressions"
     }
   },
   "ToolActions": {

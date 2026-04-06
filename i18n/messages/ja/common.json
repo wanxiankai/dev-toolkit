@@ -494,6 +494,18 @@
     "diff": {
       "name": "Diff ビューア",
       "description": "テキストとコードを並べて比較"
+    },
+    "sql": {
+      "name": "SQL フォーマッター",
+      "description": "SQLクエリを整形して見やすく表示"
+    },
+    "password": {
+      "name": "パスワード生成",
+      "description": "安全なランダムパスワードを生成"
+    },
+    "cron": {
+      "name": "Cron 式パーサー",
+      "description": "Cron式を解析して説明"
     }
   },
   "ToolActions": {

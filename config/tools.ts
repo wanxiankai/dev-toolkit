@@ -85,13 +85,13 @@ export const TOOLS: Tool[] = [
     priority: "P0",
   },
   {
-    slug: "sql-formatter",
+    slug: "sql",
     name: "SQL Formatter",
     description: "Format and beautify SQL queries",
     category: "formatters",
     icon: "Database",
-    path: "/tools/formatters/sql-formatter",
-    keywords: ["sql", "format", "query", "database", "beautify"],
+    path: "/tools/formatters/sql",
+    keywords: ["sql", "format", "query", "database", "beautify", "sql-formatter"],
     priority: "P1",
   },
   {
@@ -135,13 +135,13 @@ export const TOOLS: Tool[] = [
     priority: "P0",
   },
   {
-    slug: "password-generator",
+    slug: "password",
     name: "Password Generator",
     description: "Generate secure random passwords",
     category: "generators",
     icon: "Shield",
-    path: "/tools/generators/password-generator",
-    keywords: ["password", "secure", "random", "generator", "security"],
+    path: "/tools/generators/password",
+    keywords: ["password", "secure", "random", "generator", "security", "password-generator"],
     priority: "P1",
   },
   {
@@ -225,13 +225,13 @@ export const TOOLS: Tool[] = [
     priority: "P1",
   },
   {
-    slug: "cron-parser",
+    slug: "cron",
     name: "Cron Expression Parser",
     description: "Parse and explain cron expressions",
     category: "viewers",
     icon: "CalendarClock",
-    path: "/tools/viewers/cron-parser",
-    keywords: ["cron", "parser", "schedule", "expression", "timer"],
+    path: "/tools/viewers/cron",
+    keywords: ["cron", "parser", "schedule", "expression", "timer", "cron-parser"],
     priority: "P1",
   },
   {
@@ -285,6 +285,9 @@ export function getToolBySlug(slug: string): Tool | undefined {
     "color-converter": "color",
     "regex-tester": "regex",
     "diff-viewer": "diff",
+    "sql-formatter": "sql",
+    "password-generator": "password",
+    "cron-parser": "cron",
   };
   const normalizedSlug = legacyMap[slug] ?? slug;
   return TOOLS.find((t) => t.slug === normalizedSlug);

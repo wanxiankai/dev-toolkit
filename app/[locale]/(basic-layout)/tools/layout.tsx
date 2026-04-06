@@ -6,16 +6,30 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { CATEGORIES, TOOLS } from "@/config/tools";
 import { Link, usePathname } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
+import { Menu, Star } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 function SidebarNav({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
   const tCategories = useTranslations("Categories");
+  const t = useTranslations("DevToolKit");
 
   return (
     <ScrollArea className="h-full">
       <div className="space-y-4 p-4">
+        <Link
+          href="/favorites"
+          title={t("favorites")}
+          onClick={onNavigate}
+          className={cn(
+            "mb-2 flex items-center gap-2 rounded-md px-2 py-2 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-accent",
+            pathname === "/favorites" && "bg-accent text-foreground"
+          )}
+        >
+          <Star className="size-4" />
+          {t("favorites")}
+        </Link>
+
         {Object.keys(CATEGORIES).map((category) => {
           const categoryMeta = CATEGORIES[category as keyof typeof CATEGORIES];
           const categoryTools = TOOLS.filter((tool) => tool.category === category);

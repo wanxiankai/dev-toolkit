@@ -6,11 +6,10 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { FavoriteButton } from "@/components/tools/favorite-button";
 import { Link } from "@/i18n/routing";
 import { Tool } from "@/types/tools";
-import { Star } from "lucide-react";
 
 interface ToolLayoutProps {
   tool: Tool;
@@ -51,10 +50,7 @@ export function ToolLayout({ tool, children }: ToolLayoutProps) {
           <p className="text-muted-foreground">{tool.description}</p>
         </div>
 
-        <Button variant="outline" size="sm" type="button" disabled>
-          <Star className="size-4" />
-          Favorite
-        </Button>
+        <FavoriteButton toolSlug={tool.slug} category={tool.category} />
       </div>
 
       <Card>
